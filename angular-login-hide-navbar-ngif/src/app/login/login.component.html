@@ -1,19 +1,19 @@
 <div class="signin-content">
   <md-card>
     <md-card-content>
-      <form [formGroup]="form" (ngSubmit)="onSubmit()" autocomplete="off">
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
         <p>Please login to continue</p>
         <md-input-container class="full-width-input">
           <input mdInput placeholder="User" formControlName="userName" required>
-          <!--md-error *ngIf="isFieldInvalid('userName')">
+          <md-error *ngIf="isFieldInvalid('userName')">
             Please inform your user name
-          </md-error -->
+          </md-error>
         </md-input-container>
         <md-input-container class="full-width-input">
           <input mdInput type="password" placeholder="Password" formControlName="password" required>
-          <!--md-error *ngIf="isFieldInvalid('userName')">
+          <md-error *ngIf="isFieldInvalid('userName')">
             Please inform your password
-          </md-error -->
+          </md-error>
         </md-input-container>
         <button md-raised-button color="primary" type="submit">Login</button>
       </form>
