@@ -1,14 +1,14 @@
-<md-toolbar color="primary" *ngIf="isLoggedIn$ | async as isLoggedIn">
+<mat-toolbar color="primary" *ngIf="isLoggedIn$ | async as isLoggedIn">
   <span>
     <img src="assets/img/angular_whiteTransparent.svg" class="angular-logo">
     Angular NavBar + Login Example #01
   </span>
   <span class="fill-remaining-space"></span>
-  <button md-button>Menu Option 01</button>
-  <button md-button>Menu Option 02</button>
+  <button mat-button>Menu Option 01</button>
+  <button mat-button>Menu Option 02</button>
   <!--button md-button routerLink="login" *ngIf="!isLoggedIn; else notLoggedIn">Login</button>
   <ng-template #notLoggedIn>
     <button md-button (click)="onLogout()">Logout</button>
   </ng-template -->
-  <button md-button (click)="onLogout()" *ngIf="isLoggedIn">Logout</button>
-</md-toolbar>
+  <button mat-button (click)="onLogout()" *ngIf="isLoggedIn">Logout</button>
+</mat-toolbar>
