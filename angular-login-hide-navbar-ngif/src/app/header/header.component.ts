@@ -1,4 +1,4 @@
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import { AuthService } from './../auth/auth.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -27,7 +27,7 @@ export class HeaderComponent implements OnInit {
     this.isLoggedIn$ = this.authService.isLoggedIn;
   }
 
-  onLogout(){
+  onLogout() {
     this.authService.logout();
   }
 

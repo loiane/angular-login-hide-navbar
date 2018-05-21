@@ -1,22 +1,22 @@
 <div class="signin-content">
-  <md-card>
-    <md-card-content>
+  <mat-card>
+    <mat-card-content>
       <form [formGroup]="form" (ngSubmit)="onSubmit()">
         <p>Please login to continue</p>
-        <md-input-container class="full-width-input">
-          <input mdInput placeholder="User" formControlName="userName" required>
-          <md-error *ngIf="isFieldInvalid('userName')">
+        <mat-form-field class="full-width-input">
+          <input matInput placeholder="User" formControlName="userName" required>
+          <mat-error *ngIf="isFieldInvalid('userName')">
             Please inform your user name
-          </md-error>
-        </md-input-container>
-        <md-input-container class="full-width-input">
-          <input mdInput type="password" placeholder="Password" formControlName="password" required>
-          <md-error *ngIf="isFieldInvalid('userName')">
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field class="full-width-input">
+          <input matInput type="password" placeholder="Password" formControlName="password" required>
+          <mat-error *ngIf="isFieldInvalid('userName')">
             Please inform your password
-          </md-error>
-        </md-input-container>
-        <button md-raised-button color="primary" type="submit">Login</button>
+          </mat-error>
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit">Login</button>
       </form>
-    </md-card-content>
-  </md-card>
+    </mat-card-content>
+  </mat-card>
 </div>
